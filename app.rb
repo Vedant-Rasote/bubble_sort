@@ -1,12 +1,12 @@
 def bubble_sort(a)
-    length = a.length-1
+    length = a.length
     p a
     puts "Initial Array"
     puts "-"*19
     
-    for i in 0..length
+    for i in 0..length-1
     sorted = true
-        for j in 0..(length-i-1)
+        for j in 0..(length-i-2)
             if a[j] > a[j+1]
                 x = a[j]
                 a[j] = a[j+1]
